@@ -5,7 +5,7 @@ A simple time tracker inspired by [Time Since: Multi Stopwatch](https://apps.app
 
 ## How it looks
 
-![Screenshot 2023-11-14 at 01-31-58 Time Tracker](https://github.com/TheTrio/TimeTracker/assets/10794178/902a1554-a822-4dc7-b909-c29f3fc3caf5)
+<img width="336" alt="image" src="https://github.com/TheTrio/TimeTracker/assets/10794178/bbeb3585-d999-443e-83f4-72d325c00970">
 
-![image](https://github.com/TheTrio/TimeTracker/assets/10794178/63792162-162f-404f-b031-b9169d0734d0)
+<img width="312" alt="image" src="https://github.com/TheTrio/TimeTracker/assets/10794178/cb06530f-205d-402e-b19b-22836b8fa7f0">
 
