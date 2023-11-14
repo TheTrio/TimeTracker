@@ -155,3 +155,9 @@ export const convertDateToUTC = (date: Date) =>
     date.getUTCMinutes(),
     date.getUTCSeconds()
   )
+
+export const localeDateString = (date: Date) => {
+  return `${date.getFullYear()}-${padNumber(date.getMonth() + 1)}-${padNumber(
+    date.getDate()
+  )}`
+}

@@ -8,6 +8,7 @@ import {
   TIME_FRAMES,
   convertDateToUTC,
   isCountdown,
+  localeDateString,
   sortItems,
 } from '../utils/utils'
 import { TimeFormatInput } from './TimeFormatInput'
@@ -168,7 +169,7 @@ const ItemModal = (props: ItemModalProps) => {
         <input
           type="date"
           name="startsAt"
-          defaultValue={date.toLocaleDateString('en-CA')}
+          defaultValue={localeDateString(date)}
         />
         <div
           className="grid justify-center gap-2"
