@@ -14,7 +14,6 @@ import {
   timesCollection,
 } from './utils/utils'
 import GoogleButton from 'react-google-button'
-import { Footer } from './components/Footer'
 
 function App() {
   const [items, setItems] = useState<TimeTrackedItem[]>([])
@@ -55,7 +54,6 @@ function App() {
           Time Tracker
         </h1>
         <GoogleButton onClick={() => googleOAuthMetadata.signInWithGoogle()} />
-        <Footer />
       </div>
     )
   }
@@ -119,7 +117,6 @@ function App() {
         userId={googleOAuthMetadata.userId!}
         deleteItem={deleteItem}
       />
-      <Footer />
     </div>
   )
 }
