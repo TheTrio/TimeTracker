@@ -6,7 +6,6 @@ import { toast } from 'react-toastify'
 import {
   DEFAULT_TIME_FORMAT,
   TIME_FRAMES,
-  convertDateToUTC,
   isCountdown,
   localeDateString,
   sortItems,
@@ -96,9 +95,7 @@ const ItemModal = (props: ItemModalProps) => {
           e.preventDefault()
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           const name = (e.currentTarget.name as any).value as string
-          const startsAt = convertDateToUTC(
-            new Date(e.currentTarget.startsAt.value)
-          )
+          const startsAt = new Date(e.currentTarget.startsAt.value)
 
           const timeFormat = {
             years: e.currentTarget.years.checked,
@@ -167,7 +164,7 @@ const ItemModal = (props: ItemModalProps) => {
           className="border-gray-400 border-2 rounded px-2"
         />
         <input
-          type="date"
+          type="datetime-local"
           name="startsAt"
           defaultValue={localeDateString(date)}
         />

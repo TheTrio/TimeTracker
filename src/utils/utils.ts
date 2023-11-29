@@ -146,18 +146,8 @@ export const TIME_FRAMES = [
   'seconds',
 ]
 
-export const convertDateToUTC = (date: Date) =>
-  new Date(
-    date.getUTCFullYear(),
-    date.getUTCMonth(),
-    date.getUTCDate(),
-    date.getUTCHours(),
-    date.getUTCMinutes(),
-    date.getUTCSeconds()
-  )
-
 export const localeDateString = (date: Date) => {
   return `${date.getFullYear()}-${padNumber(date.getMonth() + 1)}-${padNumber(
     date.getDate()
-  )}`
+  )}T${padNumber(date.getHours())}:${padNumber(date.getMinutes())}`
 }
